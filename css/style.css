@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Hard Rock";
+  src: url(../img/HARD_ROCK.ttf);
+}
+@font-face {
+  font-family: "Rock n Roll";
+  src: url(../img/rocknroll_typo_crazy.ttf);
+}
+@font-face {
+  font-family: "The Dark";
+  src: url(../img/TheDark.ttf);
+}
+body {
+  background: linear-gradient(135deg, black 0%, black 25%, red 25%, red 50%, black 50%, black 75%, red 75%, red 100%);
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background: linear-gradient(135deg, black 0%, black 12.5%, red 12.5%, red 25%, black 25%, black 37.5%, red 37.5%, red 50%, black 50%, black 62.5%, red 62.5%, red 75%, black 75%, black 87.5%, red 87.5%, red 100%);
+  }
+}
+.navbar-brand, .navbar-brand:hover, h2, .container-fluid h6, .float-end {
+  color: white;
+}
+
+.navbar, h2 {
+  font-family: "The Dark";
+}
+
+.fa-bolt-lightning {
+  color: darkred;
+}
+
+h3 {
+  color: red;
+}
+
+header.container {
+  max-width: 1920px;
+}
+
+.navbar {
+  background: rgb(32, 37, 41);
+  max-width: 607px;
+}
+.navbar a, .navbar a:focus {
+  color: darkred;
+}
+.navbar a:hover {
+  color: grey;
+}
+
+.navbar-toggler {
+  border: 1px solid lightgrey;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.fa-bars {
+  color: lightgrey;
+}
+
+.container-fluid .card {
+  background: transparent;
+  min-width: 275px;
+  max-width: 275px;
+}
+
+.container .card {
+  border-radius: 0;
+  min-width: 325px;
+  max-width: 325px;
+}
+
+.float-end {
+  background: red;
+  font-family: "Rock n Roll";
+}
+
+#agenda th {
+  background: rgb(32, 37, 41);
+  color: darkred;
+  border-bottom: 1px solid darkred;
+}
+#agenda td {
+  background: rgb(32, 37, 41);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+#agenda td:hover {
+  background: grey;
+}
+
+form {
+  font-family: "Hard Rock";
+}
+form .form-control::placeholder {
+  color: red;
+}
+form #message {
+  height: 100px;
+  resize: none;
+}
+form .btn, form .btn:hover {
+  background: darkred;
+  color: white;
+}
+
+footer {
+  color: lightgrey;
+}
+footer p:first-of-type {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

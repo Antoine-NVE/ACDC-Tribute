@@ -1,0 +1,180 @@
+// FONTS IMPORT
+
+@font-face {
+  font-family: "Hard Rock";
+  src: url(../img/HARD_ROCK.ttf);
+}
+@font-face {
+  font-family: "Rock n Roll";
+  src: url(../img/rocknroll_typo_crazy.ttf);
+}
+@font-face {
+  font-family: "The Dark";
+  src: url(../img/TheDark.ttf);
+}
+
+// VARIABLES (colors)
+
+$white: white;
+$lightgrey: lightgrey;
+$grey: rgb(32, 37, 41);
+$red: red;
+$darkred: darkred;
+
+// BODY (background)
+
+body {
+  background: linear-gradient(
+    135deg,
+    black 0%,
+    black 25%,
+    red 25%,
+    red 50%,
+    black 50%,
+    black 75%,
+    red 75%,
+    red 100%,
+  )
+}
+
+@media screen and (max-width:992px) {
+  body {
+    background: linear-gradient(135deg,
+        black 0%,
+        black 12.5%,
+        red 12.5%,
+        red 25%,
+        black 25%,
+        black 37.5%,
+        red 37.5%,
+        red 50%,
+        black 50%,
+        black 62.5%,
+        red 62.5%,
+        red 75%,
+        black 75%,
+        black 87.5%,
+        red 87.5%,
+        red 100%,
+      )
+  }
+}
+
+// BASICS
+  
+.navbar-brand, .navbar-brand:hover, h2, .container-fluid h6, .float-end {
+  color: $white;
+}
+  
+.navbar, h2 {
+  font-family: "The Dark";
+}
+  
+.fa-bolt-lightning {
+  color: $darkred;
+}
+  
+h3 {
+  color: $red;
+}
+
+// NAVBAR
+
+
+header.container {
+  max-width: 1920px;
+}
+
+.navbar {
+  background: $grey;
+  max-width: 607px;
+
+  a, a:focus {
+    color: $darkred;
+  }
+
+  a:hover {
+    color: grey;
+  }
+}
+
+.navbar-toggler {
+  border: 1px solid $lightgrey;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.fa-bars {
+  color: $lightgrey;
+}
+
+// CARDS
+
+.container-fluid .card {
+  background: transparent;
+  min-width: 275px;
+  max-width: 275px;
+}
+
+.container .card {
+  border-radius: 0;
+  min-width: 325px;
+  max-width: 325px;
+}
+
+.float-end {
+  background: $red;
+  font-family: "Rock n Roll";
+}
+
+// DATES
+
+#agenda {
+  th {
+    background: $grey;
+    color: $darkred;
+    border-bottom: 1px solid $darkred;
+  }
+  
+  td {
+    background: $grey;
+    color: $white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  td:hover {
+    background: grey;
+  }
+}
+
+// CONTACT
+
+form {
+  font-family: "Hard Rock";
+  
+  .form-control::placeholder {
+    color: $red;
+  }
+
+  #message {
+    height: 100px;
+    resize: none;
+  }
+  
+  .btn, .btn:hover {
+    background: $darkred;
+    color: $white;
+  }
+}
+
+// FOOTER
+
+footer {
+  color: $lightgrey;
+
+  p:first-of-type {
+    color: $white;
+  }
+}
